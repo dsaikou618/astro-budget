@@ -1,0 +1,6 @@
+{
+  "defaultBudgetKb": 2,
+  "budgets": {
+    "/journal": 1.5
+  }
+}

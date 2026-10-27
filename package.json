@@ -1,0 +1,34 @@
+{
+  "name": "astro-budget",
+  "version": "0.1.0",
+  "description": "Per-route JavaScript budgets for Astro sites.",
+  "type": "module",
+  "bin": {
+    "astro-budget": "./dist/cli.js"
+  },
+  "main": "./dist/audit.js",
+  "exports": {
+    ".": "./dist/audit.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/",
+    "check": "npm run build && node dist/cli.js fixtures/site/dist --config fixtures/site/astro-budget.config.json"
+  },
+  "keywords": [
+    "astro",
+    "performance",
+    "bundle-size",
+    "cli"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
