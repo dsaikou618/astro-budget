@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node --test test/",
+    "test": "npm run build && node --test test/*.test.js",
     "check": "npm run build && node dist/cli.js fixtures/site/dist --config fixtures/site/astro-budget.config.json"
   },
   "keywords": [
